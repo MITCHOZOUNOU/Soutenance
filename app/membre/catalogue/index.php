@@ -179,7 +179,7 @@ if (!empty($_SESSION['utilisateur_connecter_membre'])) {
                         </li>
 
                         <li class="paginate_button page-item next" id="example2_next">
-                            <a href="<?= PROJECT_ROM . 'membre/catalogue/index/' . $page_ouvrages + 1 ?>" class="page-link text-dark">suivant</a>
+                            <a href="<?= PROJECT_ROM . 'membre/catalogue/index/' . ($page_ouvrages + 1) ?>" class="page-link text-dark">suivant</a>
                         </li>
                     </ul>
 

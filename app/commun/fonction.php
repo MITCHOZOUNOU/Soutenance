@@ -2156,7 +2156,7 @@ function recup_membre($num_mem = null): array
         $request_execution = $request_prepare->execute();
     }
 
-    if (!is_null($num_mem) && is_int($num_mem)) {
+    if (!is_null($num_mem)) {
         $request = "SELECT * FROM utilisateur WHERE profil = 'MEMBRE' and id = :num_mem and est_actif = 1 and est_supprimer = 0";
 
         $request_prepare = $database->prepare($request);

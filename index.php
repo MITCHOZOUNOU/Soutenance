@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-define('PROJECT_ROM', '/romeo/update/soutenance/');
+define('PROJECT_ROM', '/soutenance/');
 
 define('DATABASE_HOST','localhost');
 define('DATABASE_NAME','bibliotheque');
