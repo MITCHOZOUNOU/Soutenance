@@ -48,13 +48,13 @@ if (!empty($params[3])) {
             <h2 class="mt-5">Modifier Emprunt</h2>
         </div>
 
-        <div class="col-md-6 text-end cefp-list-add-btn">
-            <a href="<?= PROJECT_ROM ?>membre/historique_emprunts" class="btn" style="background-color:black; color: white;">Historique des emprunts</a>
+        <div class="col-md-6 text-end cefp-list-add-btn mt-3">
+            <a href="<?= PROJECT_ROM ?>membre/historique_emprunts" class="btn" style="background-color:#010483; color: white;">Historique des emprunts</a>
         </div>
 
     </div>
 
-    <div class="mt-3">
+    <div class="py-5">
 
         <form action="<?= PROJECT_ROM."membre/modifier_emprunt/traitement_modifier_emprunt/".$params[3]?>" method="post">
 
@@ -82,7 +82,7 @@ if (!empty($params[3])) {
             </div>
 
             <div class="text-center">
-                <button class="btn" type="submit" style="background-color:black; color: white;">Modifier</button>
+                <button class="btn" type="submit" style="background-color:#010483; color: white;">Modifier</button>
             </div>
 
         </form>

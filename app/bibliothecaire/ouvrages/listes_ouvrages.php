@@ -4,7 +4,7 @@ if (empty($_SESSION['utilisateur_connecter_bibliothecaire'])) {
     header('location:' . PROJECT_ROM . 'bibliothecaire/connexion');
     exit;
 }
-$title = 'Liste des ouvrages';
+$title = 'Liste de3s ouvrages';
 include './app/commun/header1.php';
 
 $page_ouvrages = 1;

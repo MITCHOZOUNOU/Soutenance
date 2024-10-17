@@ -67,6 +67,9 @@
                     <a <?php echo (!empty($params[1]) && $params[1] == 'accueil') ? 'style="color: #FFA500;"' : '' ?> href="<?= PROJECT_ROM ?>membre/accueil">Accueil</a>
                 </li>
                 <li class="nav-item">
+                    <a <?php echo (!empty($params[1]) && $params[1] == 'catalogue') ? 'style="color: #FFA500;"' : '' ?> href="<?= PROJECT_ROM ?>membre/catalogue/index">Catalogue</a>
+                </li>
+                <li class="nav-item">
                     <a <?php echo (!empty($params[1]) && $params[1] == 'services') ? 'style="color: #FFA500;"' : '' ?> href="<?= PROJECT_ROM ?>membre/services">Services</a>
                 </li>
                 <li class="nav-item">
@@ -74,9 +77,6 @@
                 </li>
                 <li class="nav-item">
                     <a <?php echo (!empty($params[1]) && $params[1] == 'contactez-nous') ? 'style="color: #FFA500;"' : '' ?> href="<?= PROJECT_ROM ?>membre/contactez-nous">Contactez-nous</a>
-                </li>
-                <li class="nav-item">
-                    <a <?php echo (!empty($params[1]) && $params[1] == 'catalogue') ? 'style="color: #FFA500;"' : '' ?> href="<?= PROJECT_ROM ?>membre/catalogue/index">Catalogue</a>
                 </li>
                 <?php
                 if (empty($_SESSION['utilisateur_connecter_membre'])) {

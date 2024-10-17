@@ -19,10 +19,10 @@ if (isset($_SESSION["num_empt"]) && !empty($_SESSION["num_empt"])) {
     $num_emp = $_SESSION["num_empt"];
 }
 
-$liste_emprunts = liste_emprunts($page_emprunts);
+$liste_emprunts = liste_emprunts($page_emprunts, null, $_SESSION['utilisateur_connecter_membre']['id']);
 
 if (!empty($num_emp)) {
-    $liste_emprunts = liste_emprunts($page_emprunts, $num_emp);
+    $liste_emprunts = liste_emprunts($page_emprunts, $num_emp, $_SESSION['utilisateur_connecter_membre']['id']);
 }
 
 //die(var_dump($_SERVER));
@@ -59,7 +59,7 @@ if (!empty($num_emp)) {
                                 <ul class="pagination pagination-md float-right">
                                     <li class="page-item"><a class="page-link" href="<?= $page_emprunts - 1 <= 0 ? PROJECT_ROM . 'membre/historique_emprunts/index/1' : PROJECT_ROM . 'membre/historique_emprunts/index/' . $page_emprunts - 1 ?>">-</a></li>
                                     <li class="page-item active"><a class="page-link" href="#" style="background-color: #010483; border-color:#010483;"><?= $page_emprunts; ?></a></li>
-                                    <li class="page-item"><a class="page-link" href="<?= PROJECT_ROM . 'membre/historique_emprunts/index/' . ($page_emprunts + 1) ?>">+</a></li>
+                                    <li class="page-item"><a class="page-link" href="<?= PROJECT_ROM . 'membre/historique_emprunts/index/' . $page_emprunts + 1 ?>">+</a></li>
                                 </ul>
                             </div>
                         </div>
